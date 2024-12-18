@@ -26,6 +26,11 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Add 'src' to sys.path
+        run: |
+         echo "import sys; sys.path.insert(0, './src')" > add_src_path.py
+         python add_src_path.py
+    
       - name: Run Unit Tests with Coverage
         run: |
           source .venv/bin/activate
