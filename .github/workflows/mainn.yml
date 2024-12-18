@@ -1,3 +1,4 @@
+---
 name: CI Pipeline
 
 on:
@@ -62,7 +63,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Generate Issues from TODOs
-        uses: alstr/todo-to-issue-action@v1
+        uses: alstr/todo-to-issue-action@v1.6
         with:
           REPO: ${{ github.repository }}
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
