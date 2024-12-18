@@ -1,6 +1,9 @@
 import unittest
 from student import Student
 from presence import Attendance
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
 class TestOperations(unittest.TestCase):
     def setUp(self):

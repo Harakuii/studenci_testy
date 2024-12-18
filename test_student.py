@@ -1,6 +1,8 @@
 import unittest
 import os
+import sys
 from student import Student
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
 class TestStudent(unittest.TestCase):
     def setUp(self):
