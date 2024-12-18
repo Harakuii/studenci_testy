@@ -1,6 +1,6 @@
 import unittest
-from student import Student
-from presence import Attendance
+from src.student import Student
+from src.presence import Attendance
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
